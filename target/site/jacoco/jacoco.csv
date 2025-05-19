@@ -1,0 +1,16 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+aviao,org.example.facade,PassengerFacade,8,52,1,3,2,10,3,4,2,3
+aviao,org.example.facade,ReserveFacade,2,57,2,2,0,16,2,3,0,3
+aviao,org.example.facade,AirplaneFacade,5,42,0,2,1,9,1,5,1,4
+aviao,org.example.facade,FlightFacade,8,48,0,2,2,11,2,4,2,3
+aviao,org.example.services,PassengerService,0,112,1,15,0,17,1,10,0,3
+aviao,org.example.services,ReserveService,0,30,0,2,0,6,0,3,0,2
+aviao,org.example.entities,Passenger,9,18,0,0,3,7,3,2,3,2
+aviao,org.example.entities,Flight,16,45,1,1,4,14,5,5,4,5
+aviao,org.example.entities,Reserve,16,21,1,1,5,8,5,1,4,1
+aviao,org.example.entities,Airplane,10,23,1,1,3,9,3,3,2,3
+aviao,org.example.repositories,PassengerRepository,0,36,0,2,0,9,0,6,0,5
+aviao,org.example.repositories,AirplaneRepository,0,36,0,2,0,9,0,6,0,5
+aviao,org.example.repositories,FlightRepository,1,35,1,1,0,9,1,5,0,5
+aviao,org.example.repositories,ReserveRepository,0,17,0,0,0,5,0,3,0,3
+aviao,org.example,App,450,0,20,0,102,0,30,0,16,0

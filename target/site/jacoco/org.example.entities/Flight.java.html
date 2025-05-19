@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Flight.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">aviao</a> &gt; <a href="index.source.html" class="el_package">org.example.entities</a> &gt; <span class="el_source">Flight.java</span></div><h1>Flight.java</h1><pre class="source lang-java linenums">package org.example.entities;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Flight {
+    private int id;
+    private String origin;
+    private String destination;
+    private LocalDateTime flightDateTime;
+    private Airplane airplane;
+<span class="fc" id="L13">    private List&lt;Reserve&gt; reserves = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L15">    public Flight(int id, String origin, String destination, LocalDateTime dateTime, Airplane airplane) {</span>
+<span class="pc bpc" id="L16" title="1 of 2 branches missed.">        if (airplane == null) throw new IllegalArgumentException();</span>
+<span class="fc" id="L17">        this.id = id;</span>
+<span class="fc" id="L18">        this.origin = origin;</span>
+<span class="fc" id="L19">        this.destination = destination;</span>
+<span class="fc" id="L20">        this.flightDateTime = dateTime;</span>
+<span class="fc" id="L21">        this.airplane = airplane;</span>
+<span class="fc" id="L22">    }</span>
+
+    public int getId() {
+<span class="fc" id="L25">        return id;</span>
+    }
+
+    public String getOrigin() {
+<span class="nc" id="L29">        return origin;</span>
+    }
+
+    public String getDestination() {
+<span class="nc" id="L33">        return destination;</span>
+    }
+
+    public LocalDateTime getDateTime() {
+<span class="nc" id="L37">        return flightDateTime;</span>
+    }
+
+    public Airplane getAirplane() {
+<span class="fc" id="L41">        return airplane;</span>
+    }
+
+    public int getAvailableVacancies() {
+<span class="fc" id="L45">        return airplane.getCapacity() - reserves.size();</span>
+    }
+
+    public List&lt;Reserve&gt; getReserves() {
+<span class="nc" id="L49">        return reserves;</span>
+    }
+
+    public void addReservation(Reserve reserve) {
+<span class="fc" id="L53">        reserves.add(reserve);</span>
+<span class="fc" id="L54">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

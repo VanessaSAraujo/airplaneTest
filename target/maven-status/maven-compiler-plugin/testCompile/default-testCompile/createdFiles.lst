@@ -1,0 +1,5 @@
+org\example\facades\ReserveFacadeTest.class
+org\example\facades\FlightFacadeTest.class
+org\example\services\PassengerServiceTest.class
+org\example\facades\PassengerFacadeTest.class
+org\example\facades\AirplaneFacadeTest.class
